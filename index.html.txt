@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry Bubu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(180deg, #ffdae9 0%, #fbc2eb 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #4a4a4a;
+        }
+
+        .container {
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .floating-heart {
+            font-size: 80px;
+            animation: float 3s ease-in-out infinite;
+            margin-bottom: 10px;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .main-title {
+            color: #e91e63;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #d81b60;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 15px;
+            margin: 10px 0;
+        }
+
+        .divider {
+            height: 1px;
+            background: #f0f0f0;
+            margin: 20px 0;
+        }
+
+        .emoji-row {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .btn {
+            background: #ff6b9d;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(255, 107, 157, 0.4);
+            transition: transform 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="floating-heart">❤️</div>
+        <div class="main-title">I'm Really Sorry Bubu</div>
+
+        <div class="card">
+            <h2>Hey Bubu Patel,</h2>
+            <p>I know you're angry, and I know I messed up.<br>
+            I never meant to hurt you or make you feel sad.</p>
+            <div class="emoji-row">😔💔😇</div>
+
+            <div class="divider"></div>
+
+            <p>You mean the world to me.<br>
+            Your smile is my favorite thing, and seeing you upset <i>breaks my</i></p>
+            <div class="emoji-row">🌸💗✨</div>
+
+            <div class="divider"></div>
+
+            <p>Please forgive me.<br>
+            I promise to listen better, care more, and never take you for granted.</p>
+
+            <button class="btn" onclick="celebrate()">Can We Smile Again? 😊</button>
+        </div>
+
+        <div class="footer">
+            Made with love by Harshit 💞
+        </div>
+    </div>
+
+    <script>
+        function celebrate() {
+            alert("Thank you for forgiving me! ❤️");
+            // You can add confetti or a redirect here
+        }
+    </script>
+</body>
+</html>
